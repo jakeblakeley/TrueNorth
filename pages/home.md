@@ -7,14 +7,4 @@ eleventyNavigation:
   key: Home
   order: 0
 ---
-# Welcome
-
-This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
-
-Includes [Netlify CMS](https://www.netlifycms.org) for WYSIWYG content editing, and [Netlify Forms](https://www.netlify.com/docs/form-handling) for processing your site's form data.
-
-For more info on installation and usage, view the [project repo]({{ pkg.repository.url }}) on GitHub.
-
-Or click the button below to deploy your own copy of this project to Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+Doggo ipsum length boy doge wow such tempt fat boi long doggo blop, clouds you are doing me a frighten puggo noodle horse, long doggo heckin mlem bork. Long doggo mlem borkdrive big ol doggo very hand that feed shibe fluffer, aqua doggo adorable doggo long water shoob maximum borkdrive puggo. Porgo yapper shooberino ruff very hand that feed shibe, pats you are doing me the shock. Much ruin diet aqua doggo corgo heck maximum borkdrive shooberino fluffer, shoober shoob thicc maximum borkdrive waggy wags. Fluffer blep floofs long water shoob dat tungg tho, he made many woofs doggorino wow very biscit, doggo very taste wow ur givin me a spook. Stop it fren you are doing me a frighten smol borking doggo with a long snoot for pats heck, very jealous pupper heckin good boys. Mlem noodle horse I am bekom fat length boy super chub, smol heckin blop.
