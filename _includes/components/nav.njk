@@ -1,10 +1,18 @@
 <nav>
-  {% set navPages = collections.all | eleventyNavigation %}
-  <ul>
-  {%- for entry in navPages %}
-    <li>
-      <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
-    </li>
-  {%- endfor %}
-  </ul>
+  <div class="navContainer">
+    <div class="pagesContainer">
+      {% set navPages = collections.all | eleventyNavigation %}
+      <ul>
+      {%- for entry in navPages %}
+        <li>
+          <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
+        </li>
+      {%- endfor %}
+      </ul>
+    </div>
+    <div class="logo"></div>
+    <a href="https://docs.google.com/forms/d/1Pgmaoetyuctum-j0JicVIQ2Si77JlqbMHSs3o43HO_g/" class="noDecoration">
+      <button class="book">Book Training</button>
+    </a>
+  </div>
 </nav>
