@@ -2,6 +2,7 @@
 	--yellow: #FFBF00;
 	--yellowHighlight: #FFDF80;
 	--green: #213323;
+	--greenHighlight: #466C4A;
 	--white: #ffffff;
 	--maxwidth: 1400px;
 }
@@ -12,8 +13,8 @@
 
 @font-face {
     font-family: 'avenytmedium';
-    src: url('_includes/assets/fonts/avenyt_medium-webfont.woff2') format('woff2'),
-         url('_includes/assets/fonts/avenyt_medium-webfont.woff') format('woff');
+    src: url('/_includes/assets/fonts/avenyt_medium-webfont.woff2') format('woff2'),
+         url('/_includes/assets/fonts/avenyt_medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -21,8 +22,8 @@
 
 @font-face {
     font-family: 'avenytregular';
-    src: url('_includes/assets/fonts/avenyt_regular-webfont.woff2') format('woff2'),
-         url('_includes/assets/fonts/avenyt_regular-webfont.woff') format('woff');
+    src: url('/_includes/assets/fonts/avenyt_regular-webfont.woff2') format('woff2'),
+         url('/_includes/assets/fonts/avenyt_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -47,12 +48,17 @@ code {
 }
 
 a[href],
-a[href]:visited {
+a[href]:visited, 
+.link {
 	color: var(--yellow);
 }
 
-a[href]:not(:hover) {
+a[href]:not(:hover),
+.link {
 	text-decoration: none;
+}
+.link:hover{
+	text-decoration: underline;
 }
 
 img {
@@ -166,7 +172,7 @@ h1{
 	font-size: 80px;
 	line-height: 80px;
 	text-transform: uppercase;
-	margin: 0px 0px 24px 0px
+	margin: 0px 0px 24px 0px;
 }
 
 h2{
@@ -225,6 +231,14 @@ button:hover{
 	transition: 0.2s ease-in;
 	transform: scale(1.05);
 }
+button.secondary{
+	color: var(--white);
+	background: var(--green);
+}
+
+button.secondary:hover{
+	background: var(--greenHighlight);
+}
 
 a.noDecoration{
 	text-decoration: none;
@@ -237,7 +251,7 @@ a.noDecoration{
 	width: 216px;
 	height: 141px;
 	background-color: red;
-	background: url('_includes/assets/img/True North Dog Training Logo.svg') no-repeat center;
+	background: url('/_includes/assets/img/True North Dog Training Logo.svg') no-repeat center;
 	position: absolute;
 	left: 0px;
 	right: 0px;
@@ -279,7 +293,7 @@ nav ul :first-child {
 nav li {
 	display: inline-block;
 	margin: 0 .25em;
-	
+	position: relative;
 }
 
 nav ul li a, nav ul li a[href], nav ul li a[href]:visited{
@@ -295,6 +309,38 @@ nav ul li a[data-current="current item"] {
 	text-decoration: underline;
 }
 
+/* sub navigation */
+nav ul li ul{
+	position: absolute;
+	top: 32px;
+	left: 0px;
+	margin-top: 0px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	opacity: 0;
+	pointer-events: none;
+	background: white;
+	border-radius: 8px;
+	padding: 12px;
+}
+
+nav ul li:hover ul{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+nav ul li ul li{
+	line-height: 48px;
+	margin-left: 0px;
+	white-space:nowrap;
+	padding: 0px 8px;
+}
+
+nav ul li ul li a[href], nav ul li ul li a[href]:visited{
+	color: var(--green);
+}
+
 nav button{
 	margin-top: 44px;
 }
@@ -308,6 +354,10 @@ nav button{
 	max-width: var(--maxwidth);
 	padding: 0px 24px; 
 }
+.container a[href]{
+	color: black;
+	text-decoration: none;
+}
 .headerImage{
 	background: pink;
 	height: 80%;
@@ -317,7 +367,7 @@ nav button{
 		rgba(0, 0, 0, 0.1),
 		rgba(0, 0, 0, 0.2), 
       	rgba(33, 51, 35, 0.8)
-    ), url('_includes/assets/img/header.jpg');
+    ), url('/_includes/assets/img/header.jpg');
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -327,7 +377,7 @@ nav button{
 	flex-flow: space-between;
 }
 .headerText{
-	max-width: 50%;
+	max-width: 40%;
 	padding-left: 12px;
 }
 .headerText h4{
@@ -335,16 +385,17 @@ nav button{
 }
 .headerText h1{
 	color: white;
+	margin-top: 60px;
 }
 /*================================*/
 /* Sections styles
 /*================================*/
-section h3.title{
+section h2.title{
 	text-align: center;
 	margin-top: 32px;
 }
 section.topo{
-	background-image: url('_includes/assets/img/topopattern.png');
+	background-image: url('/_includes/assets/img/topopattern.png');
 	background-size: 25%;
 }
 section.green{
@@ -365,9 +416,12 @@ section .container.threeup .point{
 	padding: 24px;
 }
 section .container.threeup img{
-	background:var(--yellow);
+	background: white;
+	box-shadow: 0px 4px 24px rgba(33, 51, 35, 0.2);
 	width: 100%;
-	height: 240px;
+	height: auto;
+	padding: 10%;
+	border-radius: 8px;
 }
 
 section .container.singlepoint{
@@ -409,4 +463,38 @@ section .container.fourup h5{
 
 section .container.fourup p{
 	padding: 0px 24px;
+}
+
+/*================================*/
+/* Pages styles
+/*================================*/
+.pageHeaderImage{
+	background: red;
+	height: 80%;
+	height: 60vh;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: flex-end;
+	margin: 0px auto;
+	flex-direction: column-reverse;
+	flex-flow: space-between;
+}
+.pageHeaderText{
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0px 24px;
+}
+
+.pageHeaderText h1{
+	color: white;
+}
+.pageBody{
+	margin-top: 64px;
+	max-width: 800px;
+}
+
+.pageBody ul{
+	margin-bottom: 64px;
 }

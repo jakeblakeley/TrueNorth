@@ -2,6 +2,22 @@
 layout: layouts/base.njk
 section: page
 ---
-<h1>{{ title }}</h1>
 
-{{ layoutContent | safe }}
+<section>
+  <div class="pageHeaderImage" style="background-image: 
+    linear-gradient(
+		rgba(0, 0, 0, 0.1),
+		rgba(0, 0, 0, 0.2), 
+      	rgba(33, 51, 35, 0.8)
+    ), url('{{ imageURL }}')">
+    <div class="container">
+        <div class="pageHeaderText">
+            <h1>{{ title }}</h1>
+        </div>
+    </div>
+  </div>
+  <div class="container pageBody">
+    {{ layoutContent | safe }}
+  </div>
+
+</section>

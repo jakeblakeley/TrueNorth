@@ -1,5 +1,5 @@
 ---
-title: About us
+title: About Jacelyn & True North Training
 metaDescription: This is a sample meta description. If one is not present in your page/post's front matter, the default metadata.desciption will be used instead.
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
@@ -7,27 +7,13 @@ eleventyNavigation:
   key: About
   order: 1
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
-Add a few line breaks in here to test:-
-Capitalize  
-on  
-low  
-hanging  
-fruit  
+Jacelyn Young has been passionate about dogs and the science behind training for as long as she can recall. She has worked professionally with dogs for over half of a decade, dedicating long days and nights to helping others, while still learning and competing with her personal dogs in many canine-oriented sports. Under the guidance of mentors around North America, she made the jump to combine her love for entrepreneurship and her love for dog training to create True North.
 
-## Our services
+Her favorite part of dog training is the foundation for not only communication between two species, but also how we communicate with other people. Jacelyn aims to deconstruct behaviors into easy-to-understand building blocks to create a limitless foundation for training, that is easily replicated and understood fluently by not only other professionals, but the hobbyist and owner as well. 
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+### Credentials
+She and her Belgian Malinois, Naru, made an impressive team in the latter half of the 2010's, taking competition rings by storm while competing in Disc, Rally, and IPO sports. Now she can be seen competing in Agility and Rally with her Hungarian Mudi, Qatar, or training in French Ring, with aspirations to become the first Hungarian Mudi to ever title in the European sport. 
 
-### Blue-sky thinking
+When Jacelyn isn’t actively training or educating herself on the latest dog behavior and training methods, she can be found traveling internationally, rock climbing, hiking, or taking pet portraits. She is a AKC CGC Evaluator, an active student with the Fenzi Dog Sports Academy, and will be testing with the Certification Council of Professional Dog Trainers this fall. 
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-#### Management frameworks
-
-Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-##### Regulatory convergence
-
-Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
