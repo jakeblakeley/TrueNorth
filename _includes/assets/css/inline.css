@@ -747,6 +747,11 @@ footer{
 	background-size: 25%;
 	padding: 48px 24px;
 }
+@media screen and (max-width: 900px) {
+	footer{
+		background-size: 60%;
+	}
+}
 small{
 	width: 100%;
 	text-align: center;
