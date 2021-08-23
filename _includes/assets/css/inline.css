@@ -222,12 +222,13 @@ button{
 	border: none;
 	cursor: pointer;
 	white-space:nowrap;
+	transition: 0.2s ease-in;
 }
 
 button:hover{
 	background-color: var(--yellowHighlight);
-	transition: 0.2s ease-in;
-	transform: scale(1.05);
+	box-shadow: 0px 4px 24px rgba(255, 233, 128, 0.35);
+	transform: scale(1.05) translateY(-8px);
 }
 button.secondary{
 	color: var(--white);
@@ -652,8 +653,16 @@ section .container.fourup .point{
 	padding-bottom: 24px;
 	background: white;
 	border-radius: 8px;
-	box-shadow: 0px 4px 24px rgba(33, 51, 35, 0.3);
+	box-shadow: 0px 4px 24px rgba(33, 51, 35, 0.2);
+	transform: scale(1);
+	transition: 0.2s ease-in-out;
 }
+section .container.fourup .point:hover{
+	transform: scale(1.05) translateY(-12px);
+	box-shadow: 0px 8px 16px rgba(33, 51, 35, 0.5);
+}
+
+
 @media screen and (max-width: 900px) {
 	section .container.fourup{
 		padding: 24px 12px 64px 12px;
@@ -724,6 +733,11 @@ img.inline{
 	float: right;
 	padding: 0px 0px 24px 24px;
 }
+@media screen and (max-width: 760px) {
+	img.inline{
+		width: 60%;
+	}
+}
 
 /*================================*/
 /* Footer
@@ -749,4 +763,10 @@ small{
 	width: 80px;
 	height: 80px;
 	margin: 32px 32px;
+	transform: scale(1);
+	transition: 0.2s ease-in-out;
+}
+.socialMediaIcon:hover{
+	transform: scale(1.05);
+	filter: brightness(180%);
 }
