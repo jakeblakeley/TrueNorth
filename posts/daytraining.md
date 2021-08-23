@@ -2,7 +2,7 @@
 title: Day Training
 metaDescription: Come home to a well trained dog, after they spend the day with us!
 summary: Why contemplating our mortality can be a powerful catalyst for change
-imageURL: /_includes/assets/img/header.jpg
+imageURL: /_includes/assets/img/puppy.jpg
 eleventyNavigation:
   key: Day Training
   parent: Services

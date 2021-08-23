@@ -15,7 +15,8 @@ Jacelyn Young has been passionate about dogs and the science behind training for
 Her favorite part of dog training is the foundation for not only communication between two species, but also how we communicate with other people. Jacelyn aims to deconstruct behaviors into easy-to-understand building blocks to create a limitless foundation for training, that is easily replicated and understood fluently by not only other professionals, but the hobbyist and owner as well. 
 
 ### Credentials
-She and her Belgian Malinois, Naru, made an impressive team in the latter half of the 2010's, taking competition rings by storm while competing in Disc, Rally, and IPO sports. Now she can be seen competing in Agility and Rally with her Hungarian Mudi, Qatar, or training in French Ring, with aspirations to become the first Hungarian Mudi to ever title in the European sport. 
+She and her Belgian Malinois, Naru, made an impressive team in the latter half of the 2010's, taking competition rings by storm while competing in Disc, Rally, and IPO sports. Now she can be seen competing in Agility and Rally with her Hungarian Mudi, Qatar, or training in French Ring. They had high aspirations as a team to become the first Mudi to ever title in the French Ring Sport, and successfully attained that goal in the summer of 2021. 
 
-When Jacelyn isn’t actively training or educating herself on the latest dog behavior and training methods, she can be found traveling internationally, rock climbing, hiking, or taking pet portraits. She is a AKC CGC Evaluator, an active student with the Fenzi Dog Sports Academy, and will be testing with the Certification Council of Professional Dog Trainers this fall. 
+When Jacelyn isn’t actively training or educating herself on the latest dog behavior and training methods, she can be found traveling internationally, rock climbing, hiking, or taking pet portraits. She is an Accredited Dog Trainer through the IAABC, AKC CGC Evaluator, an active student with the Fenzi Dog Sports Academy and will be testing with the Certification Council of Professional Dog Trainers this fall. 
+
 

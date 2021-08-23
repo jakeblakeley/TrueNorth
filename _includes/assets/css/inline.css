@@ -416,7 +416,7 @@ nav button{
 	}
 	nav button{
 		position: fixed;
-		right: 12px;
+		right: 24px;
 		bottom: 16px;
 	}
 	.mobileMenu{
@@ -451,7 +451,7 @@ nav button{
 		max-width: 75%;
 		background: white;
 		height: auto;
-		box-shadow: 0px 4px 24px rgba(33, 51, 35, 0.35);
+		box-shadow: 0px 4px 12px rgba(33, 51, 35, 0.35);
 		display: flex;
 		align-items: flex-end;
 		display: none;
@@ -633,6 +633,7 @@ section .container.fourup img{
 	height: 240px;
 	width: 100%;
 	background: var(--yellow);
+	border-radius: 8px 8px 0px 0px;
 }
 
 section .container.fourup .point{
@@ -676,7 +677,7 @@ section .container.fourup p{
 .pageHeaderImage{
 	background: var(--greenHighlight);
 	height: 80%;
-	height: 60vh;
+	height: 70vh;
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -702,6 +703,7 @@ section .container.fourup p{
 }
 .pageBody{
 	margin-top: 64px;
+	margin-bottom: 64px;
 	max-width: 800px;
 }
 
@@ -718,7 +720,7 @@ img.inline{
 /*================================*/
 /* Footer
 /*================================*/
-footer.container{
+footer{
 	background-image: url('/_includes/assets/img/topopattern.png');
 	background-size: 25%;
 	padding: 48px 24px;
