@@ -1,12 +1,14 @@
 ---
 title: About Jacelyn & True North Training
 metaDescription: This is a sample meta description. If one is not present in your page/post's front matter, the default metadata.desciption will be used instead.
+imageURL: /_includes/assets/img/jace.jpg
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
 eleventyNavigation:
   key: About
   order: 1
 ---
+![Alt text](/_includes/assets/img/jaceprofile.jpg){.inline}
 
 Jacelyn Young has been passionate about dogs and the science behind training for as long as she can recall. She has worked professionally with dogs for over half of a decade, dedicating long days and nights to helping others, while still learning and competing with her personal dogs in many canine-oriented sports. Under the guidance of mentors around North America, she made the jump to combine her love for entrepreneurship and her love for dog training to create True North.
 

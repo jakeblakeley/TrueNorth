@@ -1,6 +1,13 @@
+<a href="/">
+  <div class="logo"></div>
+</a>
 <nav>
   <div class="navContainer">
-    <div class="pagesContainer">
+    <div class="mobileMenu" id="mobileMenuToggle">
+      <img src="/_includes/assets/img/menu.svg" alt="">
+      <span>Menu</span>
+    </div>
+    <div class="pagesContainer" id="navMenu">
       {% set navPages = collections.all | eleventyNavigation %}
       {% macro renderNavListItem(entry) -%}
       <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
@@ -17,9 +24,48 @@
       {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
       </ul>
     </div>
-    <div class="logo"></div>
     <a href="https://docs.google.com/forms/d/1Pgmaoetyuctum-j0JicVIQ2Si77JlqbMHSs3o43HO_g/" class="noDecoration">
       <button class="book">Book Training</button>
     </a>
   </div>
 </nav>
+<div class="mobileNavBackdrop" id="navBackdrop"></div>
+
+<script>
+  // mobile nav activation
+  var mobileNavBackdrop = document.getElementById("navBackdrop");
+  var mobileNavMenuToggle = document.getElementById("mobileMenuToggle");
+  var mobileNavMenu = document.getElementById("navMenu");
+
+  var isMenuOpen = false;
+
+  //open menu
+  mobileNavMenuToggle.onclick = function(){
+    if (isMenuOpen === false){
+      openMenu();
+    } else {
+      closeMenu();
+    }
+  };
+
+  //close menu
+  mobileNavBackdrop.onclick = function(){
+    if (isMenuOpen === true){
+      closeMenu();
+    }
+  };
+
+  function openMenu(){
+    mobileNavMenu.classList.add("active");
+    mobileNavBackdrop.classList.add("active");
+    console.log("nav open");
+    isMenuOpen = true;
+  }
+
+  function closeMenu(){
+    mobileNavMenu.classList.remove("active");
+    mobileNavBackdrop.classList.remove("active");
+    console.log("nav close");
+    isMenuOpen = false;
+  }
+</script>

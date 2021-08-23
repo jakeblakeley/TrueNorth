@@ -5,6 +5,8 @@
 	--greenHighlight: #466C4A;
 	--white: #ffffff;
 	--maxwidth: 1400px;
+	--tabletSize: 900px;
+	--mobileSize: 760px;
 }
 
 *, *:before, *:after {
@@ -64,10 +66,6 @@ a[href]:not(:hover),
 img {
 	max-width: 100%;
 	height: auto;
-}
-
-main {
-	padding-bottom: 2em;
 }
 
 main :first-child,
@@ -192,7 +190,7 @@ h4{
 	font-family: "Lato","Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	line-height: 32px;
-	font-weight: 300;
+	font-weight: 600;
 	margin: 0px 0px 48px 0px
 }
 h5{
@@ -201,7 +199,6 @@ h5{
 	line-height: 24px;
 	margin-bottom: 16px;
 }
-
 p{
 	font-family: "Lato","Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	font-size: 18px;
@@ -224,6 +221,7 @@ button{
 	height: 56px;
 	border: none;
 	cursor: pointer;
+	white-space:nowrap;
 }
 
 button:hover{
@@ -244,18 +242,58 @@ a.noDecoration{
 	text-decoration: none;
 }
 
+@media screen and (max-width: 760px) {
+	h1{
+		font-size: 48px;
+		line-height: 56px;
+	}
+	h2{
+		font-size: 48px;
+		line-height: 56px;
+	}
+	h3{
+		font-size: 32px;
+		line-height: 48px;
+	}
+	h4{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	h5{
+		font-size: 24px;
+		line-height: 24px;
+	}
+	p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	button{ 
+		font-size: 18px;
+		line-height: 18px;
+		padding: 13px 16px 12px 16px;
+		height: 48px;
+	}
+}
+
 /*================================*/
 /* Nav Styles
 /*================================*/
 .logo{
 	width: 216px;
 	height: 141px;
-	background-color: red;
 	background: url('/_includes/assets/img/True North Dog Training Logo.svg') no-repeat center;
 	position: absolute;
+	top: 32px;
 	left: 0px;
 	right: 0px;
 	margin: auto;
+	z-index: 97;
+}
+@media screen and (max-width: 900px) {
+	.logo{
+		width: 160px;
+		height: 107px;
+	}
 }
 nav{
 	position: fixed;
@@ -264,6 +302,7 @@ nav{
 	right: 0px;
 	background: rgb(33,51,35);
 	background: linear-gradient(0deg, rgba(33,51,35,0) 0%, rgba(33,51,35,1) 100%);
+	z-index: 99;
 }
 
 .navContainer{
@@ -278,6 +317,7 @@ nav{
 	justify-content: space-between;
 	height: 200px;
 }
+
 
 /* Header Nav */
 nav ul {
@@ -297,12 +337,17 @@ nav li {
 }
 
 nav ul li a, nav ul li a[href], nav ul li a[href]:visited{
-	padding: .25em .5em;
+	padding: 8px 12px;
 	border-radius: .25em;
 	font-family: "avenytregular","Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	line-height: 24px;
 	color: white;
+}
+@media screen and (max-width: 900px) {
+	nav ul li a, nav ul li a[href], nav ul li a[href]:visited{
+		padding: 8px;
+	}
 }
 
 nav ul li a[data-current="current item"] {
@@ -345,6 +390,113 @@ nav button{
 	margin-top: 44px;
 }
 
+@media screen and (max-width: 900px) {
+	.navContainer{
+		height: 156px;
+	}
+}
+@media screen and (min-width: 760px){
+	.mobileMenu{
+		display: none;
+	}
+	.mobileNavBackdrop{
+		display: none;
+	}
+}
+@media screen and (max-width: 760px) {
+	nav{
+		height: 80px;
+		top: auto;
+		bottom: 0px;
+		background: white;
+		box-shadow: 0px 4px 24px rgba(33, 51, 35, 0.35);
+	}
+	nav button{
+		position: fixed;
+		right: 12px;
+		bottom: 16px;
+	}
+	.mobileMenu{
+		position: fixed;
+		z-index: 101;
+		height: 80px;
+		left: 0px;
+		bottom: 0px;
+		padding: 0px;
+	}
+	.mobileMenu img{
+		width: auto;
+		height: 80px;
+		float: left;
+		padding: 32px 12px 32px 32px;
+	}
+	.mobileMenu span{
+		font-size: 24px;
+		line-height: 52px;
+		padding: 16px 0px;
+		bottom: 12px;
+		float: left;
+	}
+	.navContainer{
+		padding: 0px;
+		height: 80px;
+	}
+	.pagesContainer{
+		position: fixed;
+		bottom: 80px;
+		left: 0px;
+		max-width: 75%;
+		background: white;
+		height: auto;
+		box-shadow: 0px 4px 24px rgba(33, 51, 35, 0.35);
+		display: flex;
+		align-items: flex-end;
+		display: none;
+	}
+	.pagesContainer.active{
+		display: flex;
+	}
+	.mobileNavBackdrop{
+		display: none;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 98;
+		background: rgba(0,0,0,0.8);
+	}
+	.mobileNavBackdrop.active{
+		display: block;
+	}
+	nav ul{
+		margin-top: 12px;
+		margin-bottom: 0px;
+	}
+	nav ul li{
+		width: 100%;
+		margin: 0px;
+		padding: 0px 0px 0px 16px;
+		line-height: 64px;
+	}
+	nav ul li a, nav ul li a[href], nav ul li a[href]:visited{
+		color: var(--green);
+		width: 100%;
+	}
+	nav ul li ul{
+		position: relative;
+		top: 0px;
+		opacity: 1;
+	}
+	nav ul li ul{
+		line-height: 56px;
+		padding-top: 0px;
+	}
+	nav ul li ul li a, nav ul li ul li a[href], nav ul li ul li a[href]:visited{
+		font-size: 20px;
+	}
+}
+
 /*================================*/
 /* Home Page
 /*================================*/
@@ -385,7 +537,17 @@ nav button{
 }
 .headerText h1{
 	color: white;
-	margin-top: 60px;
+	margin-top: 120px;
+}
+@media screen and (max-width: 760px) {
+	.headerImage{
+		height: 70vh;
+		background-position: 65%;
+		align-items: flex-end;
+	}
+	.headerText{
+		max-width: 65%;
+	}
 }
 /*================================*/
 /* Sections styles
@@ -398,6 +560,11 @@ section.topo{
 	background-image: url('/_includes/assets/img/topopattern.png');
 	background-size: 25%;
 }
+@media screen and (max-width: 900px) {
+	section.topo{
+		background-size: 60%;
+	}
+}
 section.green{
 	background: var(--green);
 }
@@ -408,6 +575,7 @@ section .container.threeup{
 	display: flex;
 	flex-flow: space-between;
 	align-items: stretch;
+	flex-wrap: wrap;
 	padding:64px 0px;
 }
 section .container.threeup .point{
@@ -423,12 +591,27 @@ section .container.threeup img{
 	padding: 10%;
 	border-radius: 8px;
 }
+@media screen and (max-width: 760px) {
+	section .container.threeup{
+		padding: 32px 0px;
+	}
+	section .container.threeup .point{
+		width: 100%;
+		padding: 12px;
+	}
+	section .container.threeup img{
+		width: 65%;
+	}
+	section .container.threeup h3{
+		margin-top: 12px;
+	}
+}
 
 section .container.singlepoint{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding:64px 0px;
+	padding: 64px 24px;
 	text-align: center;
 	color: white;
 	max-width: 640px;
@@ -437,23 +620,42 @@ section .container.singlepoint{
 section .container.fourup{
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
 	padding:24px 0px 64px 0px;
 	text-align: center;
+	align-items: stretch;
+	flex-wrap: wrap;
+	position: relative;
 }
 section .container.fourup img{
 	height: 240px;
 	width: 100%;
-	background: var(--green);
+	background: var(--yellow);
 }
 
 section .container.fourup .point{
+	box-sizing: content-box;
 	width: 25%;
+	width: calc((25%) - (48px));
 	margin: 24px;
 	padding-bottom: 24px;
 	background: white;
 	border-radius: 8px;
 	box-shadow: 0px 4px 24px rgba(33, 51, 35, 0.3);
+}
+@media screen and (max-width: 900px) {
+	section .container.fourup{
+		padding: 24px 12px 64px 12px;
+	}
+	section .container.fourup .point{
+		width: 50%;
+		margin: 12px;
+		width: calc((50%) - (24px));
+	}
+}
+@media screen and (max-width: 760px) {
+	section .container.fourup .point{
+		width: 100%;
+	}
 }
 
 section .container.fourup h5{
@@ -469,7 +671,7 @@ section .container.fourup p{
 /* Pages styles
 /*================================*/
 .pageHeaderImage{
-	background: red;
+	background: var(--greenHighlight);
 	height: 80%;
 	height: 60vh;
 	background-size: cover;
@@ -486,6 +688,11 @@ section .container.fourup p{
 	margin: 0 auto;
 	padding: 0px 24px;
 }
+@media screen and (max-width: 760px) {
+	.pageHeaderText{
+		padding: 0px;
+	}
+}
 
 .pageHeaderText h1{
 	color: white;
@@ -497,4 +704,36 @@ section .container.fourup p{
 
 .pageBody ul{
 	margin-bottom: 64px;
+}
+
+img.inline{
+	width: 50%;
+	float: right;
+	padding: 0px 0px 24px 24px;
+}
+
+/*================================*/
+/* Footer
+/*================================*/
+footer.container{
+	background-image: url('/_includes/assets/img/topopattern.png');
+	background-size: 25%;
+	padding: 48px 24px;
+}
+small{
+	width: 100%;
+	text-align: center;
+	color: rgb(150,150,150);
+	display: inline-block;
+}
+.socialMedia{
+	display: flex;
+	justify-content: center;
+	margin: 32px 0px;
+}
+
+.socialMediaIcon{
+	width: 80px;
+	height: 80px;
+	margin: 32px 32px;
 }

@@ -3,9 +3,7 @@ layout: layouts/base.njk
 section: services
 permalink: /services/index.html
 ---
-<h1>{{ title }}</h1>
 
-{{ layoutContent | safe }}
-
-{% set postslist = collections.post %}
-{% include "components/postslist.njk" %}
+<script>
+    window.location.replace("/#services");
+</script>
