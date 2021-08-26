@@ -8,7 +8,7 @@ eleventyNavigation:
   parent: Services
   order: 4
 ---
-### Need Something else? Let’s Chat! 
+### Need Something Else? Let’s Chat! 
 
 Zoom Lessons! Puppy Raising! Day Camp! Happy Hiking! Specialty programs are always open for consideration! 
 

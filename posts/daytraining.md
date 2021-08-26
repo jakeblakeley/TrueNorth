@@ -25,14 +25,14 @@ Our in-home day training program provides the most convenient path available to 
 
 
 
-#### In-home dog training gives you:
+#### In-Home Dog Training Gives You:
 - One-on-one Attention
 
 - Training where you need it most: in real world situations.
 
 - Training plans customized to meet your needs
 
-#### Day Training is particularly beneficial for:
+#### Day Training is Particularly Beneficial For:
 
 - Teaching front door crazies to sit politely to greet visitors
 
@@ -42,6 +42,6 @@ Our in-home day training program provides the most convenient path available to 
 
 - Working on manners inside and outside the home
 
-### Why does it work so fast?
+### Why Does It Work So Fast?
 
 In-home day training works so quickly because both you and your dog get to learn with a partner who knows what they’re doing. Dog training is a mechanical skill. When a novice owner and an untrained dog work together, they tend to confuse each other. In day training, your dog gets to learn from an expert trainer, who can guide him past any mistake so that he learns very quickly. When it’s your turn to learn the exercises, you get the benefit of working with a dog who already knows what to do. It makes learning faster, easier, and more fun for both of you.
