@@ -25,14 +25,14 @@ Our in-home day training program provides the most convenient path available to 
 
 
 
-#### In-Home Dog Training Gives You:
+#### In-Home Dog Training Gives You
 - One-on-one Attention
 
 - Training where you need it most: in real world situations.
 
 - Training plans customized to meet your needs
 
-#### Day Training is Particularly Beneficial For:
+#### Day Training is Particularly Beneficial For
 
 - Teaching front door crazies to sit politely to greet visitors
 

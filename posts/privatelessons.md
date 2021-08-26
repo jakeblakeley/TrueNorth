@@ -8,7 +8,7 @@ eleventyNavigation:
   parent: Services
   order: 2
 ---
-### Create Your One on One Training Plan
+### Create Your One-on-One Training Plan
 True North Training provides customized manners training programs as well as specialty lessons for those interested in council for behavioral problems and those interested in pursuing higher training. 
 
 Manners Lessons are tailor-made to target specific manners related problems. Loose Leash walking, Puppy Foundations, Place, Sit, Down, Stay, and Leave it are all examples of things that can be worked on in Manners Lessons. 
