@@ -633,6 +633,20 @@ section .container.singlepoint{
 	max-width: 640px;
 }
 
+section .container.singlepoint img{
+	width: 35%;
+}
+
+@media screen and (max-width: 760px) {
+	section .container.singlepoint img{
+		width: 50%;
+	}
+}
+
+section .container.singlepoint h2{
+	margin-top: 24px;
+}
+
 section .container.fourup{
 	display: flex;
 	flex-direction: row;
