@@ -43,8 +43,15 @@ Behaviours such as:
 
 - Counter-Surfing
 
-
 This program includes a 30-minute consultation on our starting day, a 90 minute follow-up at the end of the program where we will transfer all of the information, techniques, and strategies to you to ensure continued success. 
 
 For more intensive behavior issues; reactivity, anxiety, etc. longer board &amp; train options are available.
+
+### 2 Week Board &amp; Trains
+Starting at $2250
+
+### 3 Week Board &amp; Trains
+Starting at $3250
+
+
 
