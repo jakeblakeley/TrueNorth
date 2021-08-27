@@ -598,6 +598,7 @@ section .container.threeup .point{
 	text-align: center;
 	padding: 24px;
 }
+
 section .container.threeup img{
 	background: white;
 	box-shadow: 0px 4px 24px rgba(33, 51, 35, 0.2);
@@ -655,7 +656,7 @@ section .container.fourup .point{
 	width: 25%;
 	width: calc((25%) - (48px));
 	margin: 24px;
-	padding-bottom: 24px;
+	padding-bottom: 48px;
 	background: white;
 	border-radius: 8px;
 	box-shadow: 0px 4px 24px rgba(33, 51, 35, 0.2);
@@ -665,6 +666,14 @@ section .container.fourup .point{
 section .container.fourup .point:hover{
 	transform: scale(1.05) translateY(-12px);
 	box-shadow: 0px 8px 16px rgba(33, 51, 35, 0.5);
+}
+
+section .container.container.fourup .point span{
+	position: absolute;
+    bottom: 24px;
+    left: 0px;
+    margin: 0 auto;
+    right: 0px;
 }
 
 
