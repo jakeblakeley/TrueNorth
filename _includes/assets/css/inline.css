@@ -365,7 +365,7 @@ nav ul li ul{
 	flex-wrap: nowrap;
 	flex-direction: column;
 	opacity: 0;
-	pointer-events: none;
+	/* pointer-events: none; */
 	background: white;
 	border-radius: 8px;
 	padding: 12px;
@@ -373,7 +373,7 @@ nav ul li ul{
 
 nav ul li:hover ul{
 	opacity: 1;
-	pointer-events: auto;
+	/* pointer-events: auto; */
 }
 
 nav ul li ul li{
@@ -491,6 +491,7 @@ nav button{
 		position: relative;
 		top: 0px;
 		opacity: 1;
+		pointer-events: auto;
 	}
 	nav ul li ul{
 		line-height: 56px;
