@@ -364,16 +364,9 @@ nav ul li ul{
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
-	opacity: 0;
-	/* pointer-events: none; */
 	background: white;
 	border-radius: 8px;
 	padding: 12px;
-}
-
-nav ul li:hover ul{
-	opacity: 1;
-	/* pointer-events: auto; */
 }
 
 nav ul li ul li{
@@ -391,6 +384,18 @@ nav button{
 	margin-top: 44px;
 }
 
+/* desktop navigation dropdown */
+@media screen and (min-width: 760px) {
+	nav ul li ul{
+		display: none
+	}
+
+	nav ul li:hover ul{
+		display: block
+	}
+}
+
+/* mobile breakpoints */
 @media screen and (max-width: 900px) {
 	.navContainer{
 		height: 156px;
@@ -490,7 +495,6 @@ nav button{
 	nav ul li ul{
 		position: relative;
 		top: 0px;
-		opacity: 1;
 		pointer-events: auto;
 	}
 	nav ul li ul{
