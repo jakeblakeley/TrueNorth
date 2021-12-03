@@ -593,6 +593,10 @@ section .container.threeup{
 	flex-wrap: wrap;
 	padding:64px 0px;
 }
+
+section .container.threeup.smallerTopPadding{
+	padding-top: 24px;
+}
 section .container.threeup .point{
 	width: 33.333333%;
 	text-align: center;
