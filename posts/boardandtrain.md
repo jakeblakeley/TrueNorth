@@ -51,7 +51,7 @@ For more intensive behavior issues; reactivity, anxiety, etc. longer board &amp;
 Starting at $2250
 
 ### 3 Week Board &amp; Trains
-Starting at $3250
+Starting at $3400
 
 
 
