@@ -1,27 +1,27 @@
 ---
-title: Day Training
+title: Field Trips
 metaDescription: Come home to a well trained dog, after they spend the day with us!
 summary: Why contemplating our mortality can be a powerful catalyst for change
 imageURL: /_includes/assets/img/puppy.jpg
 eleventyNavigation:
-  key: Day Training
+  key: Field Trips
   parent: Services
   order: 1
 ---
 
 ### Come Home To a Well-Trained Dog
 
-Our in-home day training program provides the most convenient path available to a polite well-trained dog. After establishing a training plan with you, We come to your home and pick up your dog, practice training with your dog for you, even while you’re at work (we’re licensed, insured, and have references!). 
+Our in-home or in public field trip program provides the most convenient path available to a polite well-trained dog. After establishing a training plan with you in private lessons, we come to your home and pick up your dog, practice training with your dog for you, even while you’re at work (we’re licensed, insured, and have references!). 
 
 ### How Does It Work?
 
-- **We Pick Your Brain:**  We’ll meet near your home to evaluate your dog’s behavior, determine your priorities, and design a custom in-home day training plan to meet your needs.
+- **We Pick Your Brain:**   In our lessons we’ll determine your priorities, and design a custom in-home day training plan to meet your needs.
 
-- **Our Contract:**  Together, We write up a training plan that details exactly what to expect of the process and your dog’s behavior so that we all know what your dog will learn.
+- **Our Contract:**  Together, We write up a training plan that details exactly what to expect of the process and your dog’s behavior so that we all know what your dog will learn. You’ll be given access to pictures and videos from every session
 
-- **Let Us Do The Work:**  We’ll come train your dog, either in the home or take them with us to practice in public, 3 days each week.  You’re welcome to watch if you’re home, but we don’t involve you much.  Most of our clients are at work during these sessions.
+- **Let Us Do The Work:**  We'll train your dog, either in the home or take them with us to practice in public, up to 2 days each week.  You’re welcome to watch if you’re home, but we don’t involve you much.  Most of our clients are at work during these sessions. 
 
-- **We Train You:**  At the end of each week, we’ll do a lesson just for you and your household.  It’s your turn to train to maintain and build upon what we taught your dog that week! 
+- **We Train You:**  Biweekly, we’ll do a lesson just for you and your household.  It’s your turn to train to maintain and build upon what we taught your dog!
 
 
 
@@ -34,14 +34,22 @@ Our in-home day training program provides the most convenient path available to 
 
 #### Day Training is Particularly Beneficial For
 
-- Teaching front door crazies to sit politely to greet visitors
+- Working settling and urban dog skills  in new public places
 
 - Teaching dogs to walk politely on-leash in your neighborhood
 
-- Families with children who are overwhelmed by their dog
+- Puppy exposure and socialization opportunities 
 
 - Working on manners inside and outside the home
 
+- Expanding reactive dogs to new places and experiences 
+
+
 ### Why Does It Work So Fast?
 
-In-home day training works so quickly because both you and your dog get to learn with a partner who knows what they’re doing. Dog training is a mechanical skill. When a novice owner and an untrained dog work together, they tend to confuse each other. In day training, your dog gets to learn from an expert trainer, who can guide him past any mistake so that he learns very quickly. When it’s your turn to learn the exercises, you get the benefit of working with a dog who already knows what to do. It makes learning faster, easier, and more fun for both of you.
+In-home day training works so quickly because both you and your dog get to learn with a partner who knows what they’re doing. Dog training is a mechanical skill. When a novice owner and an untrained dog work together, they tend to confuse each other. With field trips, your dog gets to learn from an expert trainer, who can guide him past any mistake so that he learns very quickly. When it’s your turn to learn the exercises, you get the benefit of working with a dog who already knows what to do. It makes learning faster, easier, and more fun for both of you.
+
+### Pricing
+ - Manners - $60 a session 
+
+ - Specialty - $70 a session 
