@@ -517,6 +517,10 @@ nav button{
 }
 .container a[href]{
 	color: var(--greenHighlight);
+	text-decoration: none;
+}
+.pageBody a[href]{
+	color: var(--greenHighlight);
 	text-decoration: underline;
 }
 .headerImage{
