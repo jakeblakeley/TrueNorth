@@ -516,7 +516,7 @@ nav button{
 	padding: 0px 24px; 
 }
 .container a[href]{
-	color: var(--greenHighlight);
+	color: var(--green);
 	text-decoration: none;
 }
 .container.pageBody a[href]{
