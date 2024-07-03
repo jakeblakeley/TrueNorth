@@ -32,7 +32,7 @@ Our in-home or in public field trip program provides the most convenient path av
 
 - Training plans customized to meet your needs
 
-#### Day Training is Particularly Beneficial For
+#### Field Trips are Particularly Beneficial For
 
 - Working settling and urban dog skills  in new public places
 
