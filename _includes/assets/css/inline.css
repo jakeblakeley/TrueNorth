@@ -517,7 +517,7 @@ nav button{
 }
 .container a[href]{
 	color: var(--greenHighlight);
-	text-decoration: none;
+	text-decoration: underline;
 }
 .headerImage{
 	background: pink;
