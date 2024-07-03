@@ -10,7 +10,7 @@ eleventyNavigation:
 ---
 ![Alt text](/_includes/assets/img/jaceprofile.jpg){.inline}
 
-Jacelyn Young has always been passionate about the science behind animal behavior and training. She has worked professionally with dogs for over a decade, helping others while continuously learning and competing with her personal dogs in various canine-oriented sports. Under the guidance of mentors across North America, she combined her love for entrepreneurship and dog training to create True North.
+Jacelyn Young has always been passionate about the science behind animal behavior and training. She has **worked professionally with dogs for over a decade**, helping others while continuously learning and competing with her personal dogs in various canine-oriented sports. Under the guidance of mentors across North America, she combined her love for entrepreneurship and dog training to create True North.
 
 Her favorite part of dog training is building a foundation for communication, not only between two species but also in how we communicate with other people. Jacelyn aims to **deconstruct behaviors into easy-to-understand building blocks**, creating a foundation for training that is easily replicated and understood fluently by professionals, hobbyists, and everyday owners alike.
 
