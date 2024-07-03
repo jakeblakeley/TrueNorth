@@ -516,7 +516,7 @@ nav button{
 	padding: 0px 24px; 
 }
 .container a[href]{
-	color: black;
+	color: var(--greenHighlight)
 	text-decoration: none;
 }
 .headerImage{
