@@ -50,6 +50,4 @@ Our in-home or in public field trip program provides the most convenient path av
 In-home day training works so quickly because both you and your dog get to learn with a partner who knows what they’re doing. Dog training is largely a mechanical skill. When a novice owner and an untrained dog work together, they tend to confuse each other. With field trips, your dog gets to learn from an expert trainer, who can guide him past any mistake so that he learns very quickly. When it’s your turn to learn the exercises, you get the benefit of working with a dog who already knows what to do. It makes learning faster, easier, and more fun for both of you! 
 
 ### Pricing
- - **Manners:** $60 a session 
-
- - **Specialty:** $70 a session 
+$70 per session 

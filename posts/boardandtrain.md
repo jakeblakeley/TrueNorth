@@ -47,11 +47,13 @@ This program includes a 30-minute consultation on our starting day, a 90 minute 
 
 For more intensive behavior issues; reactivity, anxiety, etc. longer board &amp; train options are available.
 
-### 2 Week Board &amp; Trains
-Starting at $2250
-
 ### 3 Week Board &amp; Trains
-Starting at $3400
+Starting at $3500
+
+### 5 Week Board &amp; Trains
+Starting at $5400
+
+*15% off total cost for multi dog households
 
 
 
