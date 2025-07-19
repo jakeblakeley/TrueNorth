@@ -1,0 +1,21 @@
+{
+    "type": "Config",
+    "title": "True North Dog Training",
+    "url": "https://truenorthdogtraining.com/",
+    "description": "Explore the Eleventy Starter with Netlify demo",
+    "navLinks": [
+        {
+            "label": "Home",
+            "url": "/"
+        },
+        {
+            "label": "about",
+            "url": "/about"
+        },
+        {
+            "label": "Services",
+            "url": "/#services"
+        }
+    ],
+    "copyrightText": "© 2024 Eleventy Blog Starter. All rights reserved."
+}

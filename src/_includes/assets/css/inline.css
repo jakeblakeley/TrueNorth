@@ -1,0 +1,813 @@
+:root {
+	--yellow: #FFBF00;
+	--yellowHighlight: #FFDF80;
+	--green: #213323;
+	--greenHighlight: #466C4A;
+	--white: #ffffff;
+	--maxwidth: 1400px;
+	--tabletSize: 900px;
+	--mobileSize: 760px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'avenytmedium';
+    src: url('/_includes/assets/fonts/avenyt_medium-webfont.woff2') format('woff2'),
+         url('/_includes/assets/fonts/avenyt_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'avenytregular';
+    src: url('/_includes/assets/fonts/avenyt_regular-webfont.woff2') format('woff2'),
+         url('/_includes/assets/fonts/avenyt_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "avenytmedium","Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+body {
+	height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}
+
+p,
+pre,
+code {
+	line-height: 1.5;
+}
+
+a[href],
+a[href]:visited, 
+.link {
+	color: var(--yellow);
+}
+
+a[href]:not(:hover),
+.link {
+	text-decoration: none;
+}
+.link:hover{
+	text-decoration: underline;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+main :first-child,
+main > article :first-child {
+	margin-top: 0;
+}
+
+pre {
+	font-size: 14px;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	-moz-tab-size: 2;
+	tab-size: 2;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	padding: 1em;
+	margin: .5em 0;
+}
+
+/* Posts List */
+article {
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid var(--green);
+}
+
+main > section > article > * {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
+/* Post Tags */
+a[rel="tag"],
+a[rel="tag"]:visited {
+	display: inline-block;
+  vertical-align: text-top;
+  text-transform: uppercase;
+	letter-spacing: .1em;
+  font-size: .625em;
+  padding: 0 .5em;
+	line-height: 2em;
+	height: 2em;
+  border: 1px solid var(--green);
+	background-color: var(--green);
+	color: var(--yellow);
+  border-radius: .25em;
+  text-decoration: none;
+	margin: 0 .5em .5em 0;
+}
+
+a[rel="tag"]:hover {
+	border: 1px solid var(--yellow);
+	background-color: var(--yellow);
+	color: var(--green);
+}
+
+a[rel="tag"]:last-child {
+	margin-right: 0;
+}
+
+/* Contact Form */
+form {
+  display: grid;
+	padding: 2em 0;
+}
+
+form label {
+  display: none;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+	font-size: 1rem;
+}
+
+input,
+textarea {
+	border: 1px solid black;
+}
+
+@media screen and (min-width:768px) {
+	:root {
+		font-size: 1.1rem;
+	}
+}
+
+/*================================*/
+/* Main Font Styles
+/*================================*/
+h1{
+	font-family: "avenytregular","Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 80px;
+	line-height: 80px;
+	text-transform: uppercase;
+	margin: 0px 0px 24px 0px;
+}
+
+h2{
+	font-family: "avenytregular","Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 80px;
+	line-height: 80px;
+	margin-bottom: 24px;
+}
+
+h3{
+	font-family: "avenytregular","Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 48px;
+	line-height: 64px;
+	margin-bottom: 24px;
+}
+h4{
+	font-family: "Lato","Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 600;
+	margin: 0px 0px 48px 0px
+}
+h5{
+	font-family: "avenytregular","Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	margin-bottom: 16px;
+}
+p{
+	font-family: "Lato","Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+button{
+	color: var(--green);
+	background-color: var(--yellow);
+	padding: 15px 24px 13px 24px;
+	border-radius: 4px;
+	font-family: "avenytmedium","Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+	outline: none;
+	display: block;
+	width: auto;
+	margin: 0px;
+	height: 56px;
+	border: none;
+	cursor: pointer;
+	white-space:nowrap;
+	transition: 0.2s ease-in;
+}
+
+button:hover{
+	background-color: var(--yellowHighlight);
+	box-shadow: 0px 4px 24px rgba(255, 233, 128, 0.35);
+	transform: scale(1.05) translateY(-8px);
+}
+button.secondary{
+	color: var(--white);
+	background: var(--green);
+}
+
+button.secondary:hover{
+	background: var(--greenHighlight);
+}
+
+a.noDecoration{
+	text-decoration: none;
+}
+
+@media screen and (max-width: 760px) {
+	h1{
+		font-size: 48px;
+		line-height: 56px;
+	}
+	h2{
+		font-size: 48px;
+		line-height: 56px;
+	}
+	h3{
+		font-size: 32px;
+		line-height: 48px;
+	}
+	h4{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	h5{
+		font-size: 24px;
+		line-height: 24px;
+	}
+	p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	button{ 
+		font-size: 18px;
+		line-height: 18px;
+		padding: 13px 16px 12px 16px;
+		height: 48px;
+	}
+}
+
+/*================================*/
+/* Nav Styles
+/*================================*/
+.logo{
+	width: 216px;
+	height: 141px;
+	background: url('/images/True North Dog Training Logo.svg') no-repeat center;
+	position: absolute;
+	top: 32px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	z-index: 97;
+}
+@media screen and (max-width: 900px) {
+	.logo{
+		width: 160px;
+		height: 107px;
+	}
+}
+nav{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	background: rgb(33,51,35);
+	background: linear-gradient(0deg, rgba(33,51,35,0) 0%, rgba(33,51,35,1) 100%);
+	z-index: 96;
+}
+
+.navContainer{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: 0 auto;
+	padding: 0px 24px;
+	max-width: var(--maxwidth);
+	align-items: center;
+	justify-content: space-between;
+	height: 200px;
+}
+
+
+/* Header Nav */
+nav ul {
+	padding: 0;
+	list-style: none;
+	margin-top: 64px;
+}
+
+nav ul :first-child {
+	margin-left: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 .25em;
+	position: relative;
+}
+
+nav ul li a, nav ul li a[href], nav ul li a[href]:visited{
+	padding: 8px 12px;
+	border-radius: .25em;
+	font-family: "avenytregular","Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	color: white;
+}
+@media screen and (max-width: 900px) {
+	nav ul li a, nav ul li a[href], nav ul li a[href]:visited{
+		padding: 8px;
+	}
+}
+
+nav ul li a[data-current="current item"] {
+	text-decoration: underline;
+}
+
+/* sub navigation */
+nav ul li ul{
+	position: absolute;
+	top: 32px;
+	left: 0px;
+	margin-top: 0px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	background: white;
+	border-radius: 8px;
+	padding: 12px;
+}
+
+nav ul li ul li{
+	line-height: 48px;
+	margin-left: 0px;
+	white-space:nowrap;
+	padding: 0px 8px;
+}
+
+nav ul li ul li a[href], nav ul li ul li a[href]:visited{
+	color: var(--green);
+}
+
+nav button{
+	margin-top: 44px;
+}
+
+/* desktop navigation dropdown */
+@media screen and (min-width: 760px) {
+	nav ul li ul{
+		display: none
+	}
+
+	nav ul li:hover ul{
+		display: block
+	}
+}
+
+/* mobile breakpoints */
+@media screen and (max-width: 900px) {
+	.navContainer{
+		height: 156px;
+	}
+}
+@media screen and (min-width: 760px){
+	.mobileMenu{
+		display: none;
+	}
+	.mobileNavBackdrop{
+		display: none;
+	}
+}
+@media screen and (max-width: 760px) {
+	.logo{
+		z-index: 95;
+	}
+	nav{
+		height: 80px;
+		top: auto;
+		bottom: 0px;
+		background: white;
+		box-shadow: 0px 4px 24px rgba(33, 51, 35, 0.35);
+	}
+	nav button{
+		position: fixed;
+		right: 24px;
+		bottom: 16px;
+	}
+	.mobileMenu{
+		position: fixed;
+		z-index: 101;
+		height: 80px;
+		left: 0px;
+		bottom: 0px;
+		padding: 0px;
+	}
+	.mobileMenu img{
+		width: auto;
+		height: 80px;
+		float: left;
+		padding: 32px 12px 32px 32px;
+	}
+	.mobileMenu span{
+		font-size: 24px;
+		line-height: 52px;
+		padding: 16px 0px;
+		bottom: 12px;
+		float: left;
+	}
+	.navContainer{
+		padding: 0px;
+		height: 80px;
+	}
+	.pagesContainer{
+		position: fixed;
+		bottom: 80px;
+		left: 0px;
+		max-width: 75%;
+		background: white;
+		height: auto;
+		box-shadow: 0px 4px 12px rgba(33, 51, 35, 0.35);
+		display: flex;
+		align-items: flex-end;
+		display: none;
+	}
+	.pagesContainer.active{
+		display: flex;
+	}
+	.mobileNavBackdrop{
+		display: none;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 95;
+		background: rgba(0,0,0,0.8);
+	}
+	.mobileNavBackdrop.active{
+		display: block;
+	}
+	nav ul{
+		margin-top: 12px;
+		margin-bottom: 0px;
+	}
+	nav ul li{
+		width: 100%;
+		margin: 0px;
+		padding: 0px 0px 0px 16px;
+		line-height: 64px;
+	}
+	nav ul li a, nav ul li a[href], nav ul li a[href]:visited{
+		color: var(--green);
+		width: 100%;
+	}
+	nav ul li ul{
+		position: relative;
+		top: 0px;
+		pointer-events: auto;
+	}
+	nav ul li ul{
+		line-height: 56px;
+		padding-top: 0px;
+	}
+	nav ul li ul li a, nav ul li ul li a[href], nav ul li ul li a[href]:visited{
+		font-size: 20px;
+	}
+}
+
+/*================================*/
+/* Home Page
+/*================================*/
+.container{
+	margin: 0px auto;
+	width: 100%;
+	max-width: var(--maxwidth);
+	padding: 0px 24px; 
+}
+.container a[href]{
+	color: var(--green);
+	text-decoration: none;
+}
+.container.pageBody a[href]{
+	color: var(--greenHighlight);
+	text-decoration: underline;
+}
+.headerImage{
+	background: pink;
+	height: 80%;
+	height: 80vh;
+	background-image: 
+    linear-gradient(
+		rgba(0, 0, 0, 0.1),
+		rgba(0, 0, 0, 0.2), 
+      	rgba(33, 51, 35, 0.8)
+    ), url('/images/header.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	margin: 0px auto;
+	flex-direction: row;
+	flex-flow: space-between;
+}
+.headerText{
+	max-width: 40%;
+	padding-left: 12px;
+}
+.headerText h4{
+	color: white;
+}
+.headerText h1{
+	color: white;
+	margin-top: 120px;
+}
+@media screen and (max-width: 760px) {
+	.headerImage{
+		height: 70vh;
+		background-position: 65%;
+		align-items: flex-end;
+	}
+	.headerText{
+		max-width: 65%;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.headerText{
+		max-width: 90%;
+	}
+}
+/*================================*/
+/* Sections styles
+/*================================*/
+section h2.title{
+	text-align: center;
+	margin-top: 32px;
+}
+section.topo{
+	background-image: url('/images/topopattern.png');
+	background-size: 25%;
+}
+@media screen and (max-width: 900px) {
+	section.topo{
+		background-size: 60%;
+	}
+}
+section.green{
+	background: var(--green);
+}
+section.yellow{
+	background: var(--yellow);
+}
+section .container.threeup{
+	display: flex;
+	flex-flow: space-between;
+	align-items: stretch;
+	flex-wrap: wrap;
+	padding:64px 0px;
+}
+
+section .container.threeup.smallerTopPadding{
+	padding-top: 24px;
+}
+section .container.threeup .point{
+	width: 33.333333%;
+	text-align: center;
+	padding: 24px;
+}
+
+section .container.threeup img{
+	background: white;
+	box-shadow: 0px 4px 24px rgba(33, 51, 35, 0.2);
+	width: 100%;
+	height: auto;
+	padding: 10%;
+	border-radius: 8px;
+}
+@media screen and (max-width: 760px) {
+	section .container.threeup{
+		padding: 32px 0px;
+	}
+	section .container.threeup .point{
+		width: 100%;
+		padding: 12px;
+	}
+	section .container.threeup img{
+		width: 65%;
+	}
+	section .container.threeup h3{
+		margin-top: 12px;
+	}
+}
+
+section .container.singlepoint{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px 24px 64px 24px;
+	text-align: center;
+	color: white;
+	max-width: 640px;
+}
+
+section .container.singlepoint img{
+	width: 35%;
+}
+
+@media screen and (max-width: 760px) {
+	section .container.singlepoint img{
+		width: 50%;
+	}
+}
+
+section .container.singlepoint h2{
+	margin-top: 24px;
+}
+
+section .container.fourup{
+	display: flex;
+	flex-direction: row;
+	padding:24px 0px 64px 0px;
+	text-align: center;
+	align-items: stretch;
+	flex-wrap: wrap;
+	position: relative;
+}
+section .container.fourup img{
+	height: auto;
+	width: 100%;
+	min-height: 240px;
+	object-fit: cover;
+	background: var(--yellow);
+	border-radius: 8px 8px 0px 0px;
+}
+
+section .container.fourup .point{
+	box-sizing: content-box;
+	width: 25%;
+	width: calc((25%) - (48px));
+	margin: 24px;
+	padding-bottom: 48px;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0px 4px 24px rgba(33, 51, 35, 0.2);
+	transform: scale(1);
+	transition: 0.2s ease-in-out;
+}
+section .container.fourup .point:hover{
+	transform: scale(1.05) translateY(-12px);
+	box-shadow: 0px 8px 16px rgba(33, 51, 35, 0.5);
+}
+
+section .container.container.fourup .point span{
+	position: absolute;
+    bottom: 24px;
+    left: 0px;
+    margin: 0 auto;
+    right: 0px;
+}
+
+
+@media screen and (max-width: 900px) {
+	section .container.fourup{
+		padding: 24px 12px 64px 12px;
+	}
+	section .container.fourup .point{
+		width: 50%;
+		margin: 12px;
+		width: calc((50%) - (24px));
+	}
+}
+@media screen and (max-width: 760px) {
+	section .container.fourup .point{
+		width: 100%;
+	}
+}
+
+section .container.fourup h5{
+	padding: 0px 24px;
+	margin: 24px 0px 16px 0px;
+}
+
+section .container.fourup p{
+	padding: 0px 24px;
+}
+
+/*================================*/
+/* Pages styles
+/*================================*/
+.pageHeaderImage{
+	background: var(--greenHighlight);
+	height: 80%;
+	height: 70vh;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: flex-end;
+	margin: 0px auto;
+	flex-direction: column-reverse;
+	flex-flow: space-between;
+}
+.pageHeaderText{
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0px 24px;
+}
+@media screen and (max-width: 760px) {
+	.pageHeaderText{
+		padding: 0px;
+	}
+}
+
+.pageHeaderText h1{
+	color: white;
+}
+.pageBody{
+	margin-top: 64px;
+	margin-bottom: 64px;
+	max-width: 800px;
+}
+
+.pageBody ul{
+	margin-bottom: 64px;
+}
+
+img.inline{
+	width: 50%;
+	float: right;
+	padding: 0px 0px 24px 24px;
+}
+@media screen and (max-width: 760px) {
+	img.inline{
+		width: 60%;
+	}
+}
+
+/*================================*/
+/* Footer
+/*================================*/
+footer{
+	background-image: url('/images/topopattern.png');
+	background-size: 25%;
+	padding: 48px 24px;
+}
+@media screen and (max-width: 900px) {
+	footer{
+		background-size: 60%;
+	}
+}
+small{
+	width: 100%;
+	text-align: center;
+	color: rgb(150,150,150);
+	display: inline-block;
+}
+.socialMedia{
+	display: flex;
+	justify-content: center;
+	margin: 32px 0px;
+}
+
+.socialMediaIcon{
+	width: 80px;
+	height: 80px;
+	margin: 32px 32px;
+	transform: scale(1);
+	transition: 0.2s ease-in-out;
+}
+.socialMediaIcon:hover{
+	transform: scale(1.05);
+	filter: brightness(180%);
+}

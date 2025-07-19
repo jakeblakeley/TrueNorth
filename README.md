@@ -1,125 +1,58 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
+# Eleventy (11ty) Blog Starter
 
-# Eleventy Netlify Boilerplate
+![Eleventy Blog Starter preview.](eleventy-blog-starter.jpg)
 
-## [Demo Site](https://eleventy-netlify-boilerplate.netlify.app/)
+A starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) and [Tailwind CSS](https://tailwindcss.com/). 
 
-## What is it?
+**View demo:** [https://11ty-blog-starter-demo.netlify.app/](https://11ty-blog-starter-demo.netlify.app/)
 
-A simple template for building a fast, pre-generated HTML website using the [Eleventy](https://www.11ty.io/) static site generator. With [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
+## Deploying to Netlify
 
-Use it as a starter for your own JAMstack projects, or as an easy way to get started building websites with Eleventy.
+If you click "Deploy to Netlify" button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
 
-Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/eleventy-blog-starter)
 
-🔥 **This project is featured on Netlify's official [template showcase](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)** 🔥
 
-## Features
+## Getting Started
 
-* NEW: Added maintenance-free post author archives
-* Uses the official [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin to build menus
-* Sample pages and a blog with tag support
-* Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
-* Includes a working contact form
-* CSS 2kb minified, inlined for fastest page render
-* Optional pipeline for minified inline JS
-* Pre-builds and minifies your HTML too
-* Uses Markdown files for content
-* Uses Nunjucks (or Liquid) templates for layout
-* 100% Javascript framework free
-* Continuous Deployment workflow via Netlify
-
-## Want to try it out now?
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
-
-Clicking the button above will deploy a copy of the demo website to your Netlify
-account (you can create an account during this process if you don't have one)
-and everything needed for running the CMS:
-
-* A new repository in your GitHub account with the code
-* Full Continuous Deployment to Netlify's global CDN network
-* Control users and access with Netlify Identity
-* Manage content with Netlify CMS
-* Process form data with Netlify Forms
-
-### Setup authentication
-
-After deploying this project, Netlify Identity will add you as a CMS user and
-will email you an invite. It is not necessary to accept this invite if you wish
-to use an
-[OAuth provider](https://www.netlify.com/docs/identity/#external-provider-login)
-(e.g. Github) to manage authentication for your CMS.
-It is recommended to use this method of authentication as it removes the need
-for an email & password to log in to the CMS and is generally more secure. You
-will need to add an OAuth provider in your Netlify app settings under
-"Settings" > "Identity" > "External providers".
-
-Once you've added an OAuth provider, navigate to `/admin` on your site, select your provider from the
-list, and you should then be logged into your CMS. Cool huh?
-
-Now you're all set, and you can start editing content!
-
-## Gotchas
-
-If you change the repo that was created at deploy time from public to private, you'll need to regenerate your token,
-as the token generated using the deploy to Netlify button can only access public repositories. To
-regenerate your token, head to "Settings" in your Netlify site dashboard, go to the "Identity"
-section, then scroll to "Services" where you'll see an "Edit settings" button. Click that and you'll
-see a text link to "Generate access token in GitHub".
-
-If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
-
-## Local development
-
-### 1. Clone this repository:
+1. Clone this Repository
 
 ```
-git clone https://github.com/danurbanowicz/eleventy-netlify-boilerplate.git my-blog-name
+git clone https://github.com/netlify-templates/eleventy-blog-starter.git
 ```
 
-
-### 2. Navigate to the directory
-
-```
-cd my-blog-name
-```
-
-Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
-
-### 3. Install dependencies locally
+2. Install dependencies
 
 ```
-npm install @11ty/eleventy
+npm install
 ```
 
-### 4. Edit _data/metadata.json
-
-This file contains your site title and author details, and can be used to store any other commonly used site data.
-
-### 5. Run Eleventy (builds the site)
+3. Run Eleventy locally
 
 ```
-npx @11ty/eleventy
+npm run dev
 ```
 
-Or build automatically when a template changes:
+4. Generate a production-ready build 
+
 ```
-npx @11ty/eleventy --watch
+npm run build
 ```
 
-Or build and host locally for local development:
-```
-npx @11ty/eleventy --serve
-```
+Or you can run [debug mode](https://www.11ty.dev/docs/debugging/) to see all the internals.
 
-Or in debug mode:
-```
-DEBUG=* npx @11ty/eleventy
-```
+## Project Structure
 
-## Bug reports, feature requests, etc
+- `content/blog/` has the blog posts but really they can live in any directory. They need only the `posts` tag to be included in the blog posts [collection](https://www.11ty.dev/docs/collections/).
+- Use the `eleventyNavigation` key (via the [Eleventy Navigation plugin](https://www.11ty.dev/docs/plugins/navigation/)) in your front matter to add a template to the top level site navigation. This is in use on `content/index.njk` and `content/about/index.md`.
+- Content can be in _any template format_ (blog posts needn’t exclusively be markdown, for example). Configure your project’s supported templates in `eleventy.config.js` -> `templateFormats`.
+- The `public` folder in your input directory will be copied to the output folder (via `addPassthroughCopy` in the `eleventy.config.js` file). This means `./public/*` will live at `./_site/*` after your build completes.
+- This project uses three [Eleventy Layouts](https://www.11ty.dev/docs/layouts/):
+  - `_includes/layouts/base.njk`: the top level HTML structure
+  - `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
+  - `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
+- `_includes/postslist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `content/index.njk` has an example of how to use it.
 
-This is an ongoing project and I welcome contributions and suggestions! Feel free to submit a PR.
+## Support
 
-If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
+If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
