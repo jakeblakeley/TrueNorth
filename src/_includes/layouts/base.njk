@@ -19,19 +19,9 @@
         <style>
             {% include "src/css/inline.css" %}
         </style>
+        <script async src="//www.instagram.com/embed.js"></script>
     </head>
     <body>
-        {# {% if metadata.navLinks | length %}
-            <nav class="p-4 text-xs tracking-widest uppercase bg-slate-800" data-sb-field-path={{ [siteConfigFilePath, ":navLinks"] | join }} aria-label="Navigation menu">
-                <ul class="flex flex-row max-w-4xl gap-6 mx-auto">
-                    {%- for entry in metadata.navLinks %}
-                        <li>
-                            <a class="font-medium {% if page.url | trimTrailingSlash == entry.url | trimTrailingSlash %}text-slate-500{% else %} text-slate-400 transition hover:text-slate-500{% endif %}" href="{{ entry.url }}" {% if page.url | trimTrailingSlash == entry.url | trimTrailingSlash %} aria-current="page" {% endif %} data-sb-field-path={{ [".", loop.index0] | join }}>{{ entry.label }}</a>
-                        </li>
-                    {%- endfor %}
-                </ul>
-            </nav>
-        {% endif %} #}
         <header>
             <a href="/">
                 <div class="logo"></div>
