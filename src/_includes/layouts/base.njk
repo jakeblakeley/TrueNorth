@@ -84,6 +84,15 @@
         </footer>
     </body>
     <script>
+        //process instagram embeds
+        window.addEventListener('load', function() {
+            if (window.instgrm) {
+                window.instgrm.Embeds.process();
+            } else {
+                console.log("no window.instagram");
+            }
+        });
+
         //current year for footer
         document.getElementById("year").innerHTML = new Date().getFullYear();
 
